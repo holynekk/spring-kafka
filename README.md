@@ -24,7 +24,7 @@ Multi partitions
 
 `kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic t-multi-partitions --offset earliest --partition 0`
 
-``
+`kafka-topics.sh --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t-employee`
 
 ``
 
