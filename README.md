@@ -36,6 +36,13 @@ Multi partitions
 
 `kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic t-rebalance`
 
+## Idempotency
+
+`kafka-topics.sh --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t-purchase-request`
+
+
+``
+
 ``
 
 ``
