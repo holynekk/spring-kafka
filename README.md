@@ -26,6 +26,16 @@ Multi partitions
 
 `kafka-topics.sh --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t-employee`
 
+`kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cg-dashboard --describe`
+
+## Rebalancing
+
+`kafka-topics.sh --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t-rebalance`
+
+`kafka-topics.sh --bootstrap-server localhost:9092 --alter --topic t-rebalance --partitions 2`
+
+`kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic t-rebalance`
+
 ``
 
 ``
